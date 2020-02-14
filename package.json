@@ -1,0 +1,21 @@
+{
+  "name": "app-sign-in",
+  "version": "1.0.0",
+  "description": "Sign-in through google account",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Beskorovainyi Maksym",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "chalk": "^3.0.0"
+  }
+}
