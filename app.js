@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 4000;
 const authRoutes = require('./routes/auth-routes');
 const passportSetup = require('./config/passport-setup');
 const mongoose = require('mongoose');
@@ -19,10 +19,10 @@ app.get('/', (req, res) => {
 });
 
 //connect to mongodb
-mongoose.connect(keys.mongodb.dbURI, (err) => {
-	if (err) throw err;
-	console.log('Successfully connected mongodb');
-});
+// mongoose.connect(keys.mongodb.dbURI, (err) => {
+// 	if (err) throw err;
+// 	console.log('Successfully connected mongodb');
+// });
 
 const server = app.listen(port, (error) => {
     if (error) return (
